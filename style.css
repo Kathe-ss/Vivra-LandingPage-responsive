@@ -1,0 +1,29 @@
+.scrolling-text {
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  color: white;
+  gap: 1rem;
+}
+
+.text-item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.separator {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: lighter;
+  color: #ffffffa0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
