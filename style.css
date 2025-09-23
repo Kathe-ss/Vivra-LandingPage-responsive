@@ -89,10 +89,10 @@
 }
 
 /* Imágenes circulares */
-.guaterito img {
-  max-width: 100px;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+
+
+.guaterito p {
+  color: #fff;
 }
 
 /* Botón */
