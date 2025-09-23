@@ -27,3 +27,180 @@
     transform: translateX(-50%);
   }
 }
+
+.icon {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+/* Fondo de sección */
+.productos {
+  background-color: #2f3e2f; /* verde oscuro */
+}
+
+/* Colores de títulos */
+.productos h2,
+.productos h4 {
+  font-family: 'Georgia', serif;
+}
+
+/* Tarjeta */
+.productos .card {
+  background-color: #fdf6ec; /* crema */
+  border: none;
+  border-radius: 8px;
+}
+
+/* Indicadores del carrusel */
+.productos .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #d4a017; /* dorado */
+  opacity: 0.5;
+  margin: 0 5px;
+}
+.productos .carousel-indicators .active {
+  opacity: 1;
+  background-color: #fff;
+  border: 2px solid #d4a017;
+}
+
+/* Botón */
+.productos .btn-dark {
+  background-color: #5c4033;
+  border: none;
+}
+.productos .btn-dark:hover {
+  background-color: #d4a017;
+  color: #fff;
+}
+
+.guaterito {
+  background-color: #2f3e2f; /* verde oscuro */
+}
+
+/* Título */
+.guaterito h2 {
+  font-family: 'Georgia', serif;
+}
+
+/* Imágenes circulares */
+.guaterito img {
+  max-width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Botón */
+.guaterito .btn-dark {
+  background-color: #5c4033;
+  border: none;
+}
+.guaterito .btn-dark:hover {
+  background-color: #d4a017;
+  color: #fff;
+}
+
+/* Enlace */
+.guaterito a {
+  font-size: 0.9rem;
+  color: #d4a017 !important;
+}
+.guaterito a:hover {
+  color: #fff !important;
+}
+
+/* Fondo verde oscuro */
+.bg-dark-green {
+  background-color: #2f4f39;
+}
+
+/* Superposición oscura para mejorar legibilidad */
+.card-overlay .card-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+}
+
+/* Fondo verde oscuro */
+.bg-dark-green {
+  background-color: #2f4f39;
+}
+
+/* Color especial para títulos */
+.text-accent {
+  color: #d4af37; /* tono dorado similar al de tu captura */
+}
+
+/* Colores base */
+.bg-dark-green { background-color: #2f4f39; } /* si usas esta clase en otras secciones */
+.text-accent { color: #d4a017; }
+
+/* Imagen de los testimonios */
+.img-test {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+/* Cards (color coherente con la captura) */
+.testimonial-card {
+  background-color: #3f5b49;  /* verde claro sobre el fondo */
+  color: #efeede;
+  border: none;
+  border-radius: 6px;
+}
+
+.metric-card {
+  background-color: #3b5543; /* ligeramente distinto pero coherente */
+  color: #efeede;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Footer: imagen de fondo + overlay oscuro */
+.site-footer {
+  position: relative;
+  background-image: url('img/footer-bg.jpg'); /* reemplaza por tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.site-footer .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* overlay oscuro */
+  z-index: 0;
+}
+/* Asegurar que el contenido quede encima del overlay */
+.site-footer > .container { position: relative; z-index: 1; }
+
+/* Inputs transparentes con borde claro para el footer */
+.form-control-dark {
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 0;
+}
+.form-control-dark::placeholder { color: rgba(255,255,255,0.7); }
+
+/* Hover enlace */
+.site-footer a:hover { color: #d4a017; text-decoration: none; }
+
+/* Responsividad: reducir tamaño de imágenes de testimonios en móviles */
+@media (max-width: 576px) {
+  .img-test { width: 56px; height: 56px; }
+  .testimonial-card, .metric-card { text-align: center; }
+}
