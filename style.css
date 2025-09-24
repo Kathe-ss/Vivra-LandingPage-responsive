@@ -59,14 +59,14 @@
 .productos .carousel-indicators button {
   width: 12px;
   height: 12px;
-  background-color: #d4a017; /* dorado */
+  background-color: #E3C064; /* dorado */
   opacity: 0.5;
   margin: 0 5px;
 }
 .productos .carousel-indicators .active {
   opacity: 1;
   background-color: #fff;
-  border: 2px solid #d4a017;
+  border: 2px solid #E3C064;
 }
 
 /* Botón */
@@ -92,7 +92,7 @@
 
 
 .guaterito p {
-  color: #fff;
+  color: #fef4e6;
 }
 
 /* Botón */
@@ -165,7 +165,7 @@
 
 .metric-card {
   background-color: #3b5543; /* ligeramente distinto pero coherente */
-  color: #efeede;
+  color: #fef4e6;
   border: none;
   border-radius: 6px;
 }
@@ -173,7 +173,7 @@
 /* Footer: imagen de fondo + overlay oscuro */
 .site-footer {
   position: relative;
-  background-image: url('img/footer-bg.jpg'); /* reemplaza por tu imagen */
+  background-image: url('img/footer-bg.png'); /* reemplaza por tu imagen */
   background-size: cover;
   background-position: center;
   color: #fff;
